@@ -9,7 +9,7 @@ My personal journey of building high-performance motion control algorithms from 
 
 ## 🎯 路线里程碑 (Milestones)
 - **2026.4.25** 配置了vscode+EIDE工作环境，告别陈旧的keil5，建立工程模版方便一键复制。
-- **2026.4.26** 完成了1-1到1-4，了解了部分器件的搭建方式，掌握了把功能封装入库的方法。
+- **2026.4.26** 完成了流水灯控制，蜂鸣器设置，按钮控制LED，光光敏电阻控制蜂鸣器模块，了解了部分器件的搭建方式，掌握了把功能封装入库的方法。
 
 ## 🛠️ 硬件与工具链
 - **主控芯片:** STM32F103C8T6 (后续将升级至 STM32G431)
