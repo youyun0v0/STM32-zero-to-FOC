@@ -1,11 +1,11 @@
-# === EIDE & VSCode 忽略项 ===
+# EIDE & VSCode 忽略项 
 build/
 .eide/log/
 .vscode/
 .cmsis/
 .pack/
 
-# === Keil 通用忽略项 ===
+# Keil 通用忽略项 
 Objects/
 Listings/
 DebugConfig/
@@ -20,6 +20,6 @@ DebugConfig/
 *.elf
 *.out
 
-# === 个人电脑配置文件 (绝对不能传) ===
+# 个人电脑配置文件 (绝对不能传) 
 *.uvguix.*
 *.uvoptx
