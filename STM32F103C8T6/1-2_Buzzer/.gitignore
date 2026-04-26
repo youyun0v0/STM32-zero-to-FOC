@@ -1,0 +1,20 @@
+# === EIDE 专属忽略项 ===
+build/
+.eide/log/
+*.map
+*.elf
+*.hex
+*.bin
+*.out
+
+# === Keil / STM32 通用忽略项 ===
+Objects/
+Listings/
+*.o
+*.d
+*.crf
+*.dep
+*.bak
+
+# === VSCode 自身配置 ===
+.vscode/
