@@ -15,6 +15,10 @@ void PWM_Init(void)
         TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up; //计数模式，设置为向上计数（还可以选向下计数，中央对齐）
         TIM_TimeBaseStructure.TIM_RepetitionCounter = 0; //重复计数器，表示计数器重复几次之后才会产生更新事件（高级定时器才有）
         TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure); //根据上面的配置初始化TIM2
+    //1.5 如果需要用到引脚重映射，配置如下
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);//打开AFIO时钟
+        GPIO_PinRemapConfig(GPIO_PartialRemap1_TIM2,ENABLE);//重映射函数：部分重映射可以把TIM2CH1端口从A0重映射到A15
+        GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable,ENABLE);//解除PA15端口原来自带的端口功能，把PA15变成普通的GPIO口
     //2.初始化输出比较单元
         TIM_OCInitTypeDef TIM_OCInitStructure;
         TIM_OCStructInit(&TIM_OCInitStructure);//结构体赋初始值
@@ -27,7 +31,7 @@ void PWM_Init(void)
     //3.初始化GPIOA
         RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);//打开GPIOA时钟（供电）
         GPIO_InitTypeDef GPIO_InitStructure;//引脚工作参数配置
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;//选择GPIOA的A0引脚
+        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_15;//选择GPIOA的A0引脚（这里如果选重映射，要选择A15）
         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;//选择复用推挽输出（引脚不再由普通GPIO控制，而是给了片上的外设TIM2_CH1控制）
         GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;//速度50MHz（电平翻转的最大频率）
         GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA
