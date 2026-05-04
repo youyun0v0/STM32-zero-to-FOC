@@ -26,5 +26,8 @@
 # 实验内容
 - 对射式红外传感器实验：挡光片从对射式红外传感器前经过时，DO引脚（B13）产生电平变化，Num变量加1，并在OLED上显示Num的值
 
+## 实验视频（bilibili）
+- [2-1 EXTI实验：对射式红外传感器](https://www.bilibili.com/video/BV1z9RvBvEJS?vd_source=70fda1a733a6bced05721875006f85cd)
+
 # 函数封装
 - 封装在Hardware/CountSensor.c中。展示了EXTI,NVIC的配置方法

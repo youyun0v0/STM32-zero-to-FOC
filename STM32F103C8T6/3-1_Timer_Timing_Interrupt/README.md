@@ -57,4 +57,7 @@
 ## 参数：
 - PSC= 7200-1 使定时器频率为72MHz/7200=10kHz
 - ARR= 10000-1 使循环周期为0-9999。每1/10000秒更新一次数，故每一秒发生一次中断事件
-## 函数已封装在Timer.c文件中
+- 中断函数已封装在Timer.c文件中
+
+## 实验视频（bilibili）
+- [3-1 定时器实现每秒数字加1](https://www.bilibili.com/video/BV1E9RvBvESd?vd_source=70fda1a733a6bced05721875006f85cd)
