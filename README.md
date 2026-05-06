@@ -18,6 +18,7 @@ My personal journey of building high-performance motion control algorithms from 
 - **2026.5.1** 学习了EXTI外部中断原理，Timer计时器的代码实现，相关函数已封装。
 - **2026.5.3** 学习了PWM波与输出比较的基本原理，实现了呼吸灯实验；为库中部分学习笔记和实验内容补充了README文档，使仓库内容更易读。
 - **2026.5.4** 成功利用PWM波驱动了舵机和直流电机。
+- **2026.5.6** 学习了输入捕获IC功能，成功利用IC模式与PWMI模式测量了PWM的频率与占空比；封装了常用的GPIO，Timer函数模块进入BSP库中，让后续的代码更简单易读。
 
 ## 🛠️ 硬件与工具链
 - **主控芯片:** STM32F103C8T6 (后续将升级至 STM32G431)
