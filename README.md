@@ -10,6 +10,7 @@ My personal journey of building high-performance motion control algorithms from 
 ## 🎯 路线里程碑 (Milestones)
 - **2026.4.25** 正式开始学习STM32F103C8T6。
 - **2026.5.4** 利用PWM波驱动了直流电机旋转。
+- **2026.5.18** 完成了定时器的学习
 
 ## 📝 学习日记 (Diary)
 - **2026.4.25** 配置了vscode+EIDE工作环境，告别陈旧的keil5，建立工程模版方便一键复制。
@@ -19,6 +20,8 @@ My personal journey of building high-performance motion control algorithms from 
 - **2026.5.3** 学习了PWM波与输出比较的基本原理，实现了呼吸灯实验；为库中部分学习笔记和实验内容补充了README文档，使仓库内容更易读。
 - **2026.5.4** 成功利用PWM波驱动了舵机和直流电机。
 - **2026.5.6** 学习了输入捕获IC功能，成功利用IC模式与PWMI模式测量了PWM的频率与占空比；封装了常用的GPIO，Timer函数模块进入BSP库中，让后续的代码更简单易读。
+- **2026.5.18** 学习了编码器接口，完成了编码器测速实验。
+- **2026.5.19** 学习了ADC模数转换器，成功使用电位器等设备测量出AD转换值及其对应的电压
 
 ## 🛠️ 硬件与工具链
 - **主控芯片:** STM32F103C8T6 (后续将升级至 STM32G431)
