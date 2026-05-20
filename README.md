@@ -22,6 +22,7 @@ My personal journey of building high-performance motion control algorithms from 
 - **2026.5.6** 学习了输入捕获IC功能，成功利用IC模式与PWMI模式测量了PWM的频率与占空比；封装了常用的GPIO，Timer函数模块进入BSP库中，让后续的代码更简单易读。
 - **2026.5.18** 学习了编码器接口，完成了编码器测速实验。
 - **2026.5.19** 学习了ADC模数转换器，成功使用电位器等设备测量出AD转换值及其对应的电压
+- **2026.5.20** 学习实现了DMA数据转运功能，成功转运了数组中的元素
 
 ## 🛠️ 硬件与工具链
 - **主控芯片:** STM32F103C8T6 (后续将升级至 STM32G431)
